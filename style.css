@@ -1,0 +1,185 @@
+body {
+    background: #eeeeee;
+}
+
+
+/*                                           Analog clock                                   */
+
+.clockday {
+    background: url(img/clock.jpg) no-repeat;
+    width: 25vw;
+    height: 25vw;
+    display: flex;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 7rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: -6px -6px 16px #fff, 6px 6px 16px hsla(240, 30%, 86%, 1), inset 6px 6px 16px hsla(240, 30%, 86%, 1), inset -6px -6px 16px #fff;
+}
+
+.clockday::before {
+    content: "";
+    position: absolute;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: hsl(240, 53%, 49%);
+    border-radius: 50%;
+    z-index: 10;
+    border: 2px solid hsl(240, 24%, 94%);
+}
+
+.hour,
+.minute,
+.second {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.hour {
+    width: 5.5rem;
+    height: 8.7rem;
+}
+
+.hour::before {
+    content: "";
+    position: absolute;
+    height: 4rem;
+    width: 0.6rem;
+    border-radius: 0.75rem;
+    background-color: hsl(240, 12%, 35%);
+    z-index: 1;
+}
+
+.minute {
+    width: 6.5rem;
+    height: 11.4rem;
+}
+
+.minute::before {
+    content: "";
+    position: absolute;
+    height: 6rem;
+    width: 0.5rem;
+    border-radius: 0.75rem;
+    background-color: hsl(240, 12%, 35%);
+    z-index: 1;
+}
+
+.second {
+    width: 6.5rem;
+    height: 11.4rem;
+}
+
+.second::before {
+    content: "";
+    position: absolute;
+    height: 7rem;
+    width: 0.125rem;
+    border-radius: 0.75rem;
+    background-color: hsl(240, 53%, 49%);
+    z-index: 1;
+}
+
+.dark {
+    position: relative;
+    bottom: 10rem;
+    left: 15rem;
+}
+
+
+/*                                           Digital clock                                    */
+
+.box {
+    margin: 10px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: black;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: -3px -3px 9px hsla(240, 4%, 14%, 1), 3px 3px 7px hsla(240, 4%, 14%, 1);
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+    border: 3px solid brown;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 28px 28px 56px hsla(240, 0%, 2%, 1), -28px -28px 56px hsla(240, 0%, 2%, 1);
+}
+
+.clocknight {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f5f8;
+}
+
+#dot {
+    font-size: 7rem;
+    z-index: 3;
+}
+
+button {
+    z-index: 3;
+    border-radius: 50%;
+    border: none;
+    box-shadow: inset -1px -1px 1px hsla(240, 0%, 100%, 1), inset 1px 1px 1px hsla(240, 30%, 86%, 1);
+    cursor: pointer;
+    color: #061116;
+}
+
+.light {
+    position: relative;
+    bottom: 11.6rem;
+    left: 0.8rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.7rem;
+    color: blue;
+    box-shadow: inset -1px -1px 1px hsla(240, 8%, 20%, 1), inset 1px 1px 1px hsla(240, 8%, 12%, 1);
+    background-color: black;
+}
+
+.day {
+    position: absolute;
+    top: 28rem;
+    right: 25rem;
+    font-size: 2.8rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+#second {
+    position: absolute;
+    top: 22.5rem;
+    left: 54.8rem;
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+.ampm {
+    position: relative;
+    bottom: 5.5rem;
+    left: 3rem;
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+.hidden {
+    display: none;
+}

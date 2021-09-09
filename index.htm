@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!--                                       Analog                                                        -->
+
+    <div class="clockday">
+        <div class="hour"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+        <button class="dark"><img src="img/night.png" alt="" /></button>
+    </div>
+
+    <!--                                             Digital                                -->
+
+    <div class="clocknight hidden">
+        <div class="box" id="hour"></div>
+
+        <div class="" id="dot">:</div>
+        <div class="box" id="minute"></div>
+        <div id="second"></div>
+
+        <div class="ampm"></div>
+        <button class="light">&#9728;</button>
+        <div class="day"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
